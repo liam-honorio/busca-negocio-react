@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeaderMain from './components/HeaderMain';
+import LogoMain from './components/LogoMain';
+import IconSearch from './components/IconSearch';
+import SearchMain from './components/SearchMain';
+import FilterIcon from './components/FilterIcon';
+import Texto from './components/Texto';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Busca Negócios React</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderMain>
+        <LogoMain />
+        <IconSearch />
+      </HeaderMain>
+      <SearchMain>
+        <FilterIcon />
+        <Texto>Guia de serviços</Texto>
+      </SearchMain>
+    </>
   );
 }
 
