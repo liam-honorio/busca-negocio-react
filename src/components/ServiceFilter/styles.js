@@ -3,7 +3,9 @@ import IconFilter from '../IconFilter';
 
 export const ServiceFilterStyle = styled.nav`
   background-color: #3a4042;
+  padding: 8px 16px;
   display: flex;
+  align-items: center;
 
   & > ${IconFilter} {
     margin-right: 16px;
